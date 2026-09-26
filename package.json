@@ -1,0 +1,36 @@
+{
+  "name": "multitenant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "contract:emit": "prisma contract emit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.6.0",
+  "type": "module",
+  "dependencies": {
+    "@prisma/orm-postgres": "8.0.0-rc.12",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "0.6.1",
+    "@types/node": "^26.6.2",
+    "prisma": "8.0.0-rc.17",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
