@@ -1,0 +1,6 @@
+// use prisma-8
+
+model tenant {
+  id        Int      @id @default(autoincrement())
+  tenant_key String
+}
